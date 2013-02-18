@@ -6,6 +6,8 @@ $handwriting_alt: 'Schoolbell', cursive
 $grey: #333
 $blue: #77b8e8
 
+$default-font-size: 16px
+
 
 ::-moz-selection
 	background: $blue
@@ -19,8 +21,22 @@ $blue: #77b8e8
 
 
 body
+	min-height: 1200px
+	margin: 0
 	background: url("../images/linedpaper.png")
 
 h1
 	font-family: $handwriting_alt
 	font-size: 5em
+
+.wrap
+	max-width: 1200px
+	margin: 0 auto
+
+.mainheader
+
+	.image-box
+		height: emCalc(500px)
+		text-align: center
+		overflow: hidden
+
