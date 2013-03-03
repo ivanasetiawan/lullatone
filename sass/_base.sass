@@ -3,6 +3,7 @@
 // Variables
 $handwriting: 'Sue Ellen Francisco', cursive
 $handwriting_alt: 'Schoolbell', cursive
+$handwriting_alt2: 'Molle', cursive
 $grey: #333
 $blue: #77b8e8
 
@@ -27,7 +28,6 @@ body
 
 h1
 	font-family: $handwriting_alt
-	font-size: 5em
 
 .wrap
 	max-width: 1200px
@@ -39,4 +39,11 @@ h1
 		height: emCalc(500px)
 		text-align: center
 		overflow: hidden
-
+		margin-top: -140px
+	
+	h1
+		position: relative
+		margin: 0
+		font-size: emCalc(100px)
+		text-align: center
+		z-index: 20

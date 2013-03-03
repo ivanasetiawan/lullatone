@@ -5,6 +5,6 @@ $(document).ready(function() {
 function paralex() {
 	$(window).scroll(function(){
 		var body = $('body').scrollTop();
-		$('.mainheader img').css('-webkit-transform', 'translateY(' + (body/5) + 'px)');
+		$('.mainheader img').css('-webkit-transform', 'translateY(' + (body/2) + 'px)');
 	});
 }
