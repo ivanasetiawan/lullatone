@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	parallex();
+	//parallex();
 	trialError();
 });
 
@@ -11,7 +11,9 @@ function parallex() {
 }
 
 function trialError() {
-	$('a').bind({
+	var windowHeight = $(window).height();
+
+	$('.story').bind({
 		'click' : function(e) {
 			console.log('clicked');
 		},
