@@ -11,17 +11,23 @@ function parallex() {
 }
 
 function trialError() {
-	var windowHeight = $(window).height();
+	$('.color-navs a').on({
 
-	$('.story').bind({
-		'click' : function(e) {
-			console.log('clicked');
+		mouseenter: function(){
+			bgColor = $(this).css('background-color');
+			$('.mainheader').css({
+				backgroundColor : bgColor,
+				//backgroundImage : 'none'
+			}).addClass('yes');
 		},
-		'mouseenter' : function(f) {
-			console.log('mouseenter');
-		},
-		'mouseleave' : function(g) {
-			console.log('mouseleave');
-		}
+
+		//mouseleave: function(){
+		//	$('body').css(
+		//		'background', '#fff url("../lullatone/public/images/linedpaper.png")').removeClass('yes');
+		//},
+
+		click: function(){
+			bgImg = $(this).css('background-image');
+			$('.mainheader').css('background',	bgImg)}
 	});
 }
